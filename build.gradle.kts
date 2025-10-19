@@ -1,9 +1,12 @@
 plugins {
 	kotlin("jvm") version "2.0.20"
+    kotlin("kapt") version "1.9.22"
 	kotlin("plugin.spring") version "2.0.20"
+    kotlin("plugin.jpa") version "2.0.20"
+    kotlin("plugin.allopen") version "2.0.20"
 	id("org.springframework.boot") version "3.5.6"
 	id("io.spring.dependency-management") version "1.1.7"
-	kotlin("plugin.jpa") version "2.0.20"
+
 }
 
 group = "com.example"
@@ -28,9 +31,15 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.h2database:h2")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    kapt("org.springframework.boot:spring-boot-configuration-processor")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(module = "mockito-core")
+    }
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("com.ninja-squad:springmockk:4.0.2")
 }
 
 kotlin {

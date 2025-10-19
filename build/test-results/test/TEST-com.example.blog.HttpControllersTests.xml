@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.blog.HttpControllersTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-10-19T21:34:07.943Z" hostname="DESKTOP-GG" time="0.751">
+  <properties/>
+  <testcase name="List articles()" classname="com.example.blog.HttpControllersTests" time="0.734"/>
+  <testcase name="List users()" classname="com.example.blog.HttpControllersTests" time="0.016"/>
+  <system-out><![CDATA[14:34:03.929 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.blog.HttpControllersTests]: HttpControllersTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:34:04.450 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.HttpControllersTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-19T14:34:04.955-07:00  INFO 6824 --- [blog] [    Test worker] com.example.blog.HttpControllersTests    : Starting HttpControllersTests using Java 21.0.8 with PID 6824 (started by genna in C:\Users\genna\Documents\github\kotlin-sping-project)
+2025-10-19T14:34:04.956-07:00  INFO 6824 --- [blog] [    Test worker] com.example.blog.HttpControllersTests    : No active profile set, falling back to 1 default profile: "default"
+2025-10-19T14:34:07.638-07:00  INFO 6824 --- [blog] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-19T14:34:07.639-07:00  INFO 6824 --- [blog] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-19T14:34:07.645-07:00  INFO 6824 --- [blog] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-10-19T14:34:07.770-07:00  INFO 6824 --- [blog] [    Test worker] com.example.blog.HttpControllersTests    : Started HttpControllersTests in 3.2 seconds (process running for 4.845)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\genna\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.7\fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
