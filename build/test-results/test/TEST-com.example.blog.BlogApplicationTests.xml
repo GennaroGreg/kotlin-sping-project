@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.blog.BlogApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-19T17:59:25.685Z" hostname="Desktop-GG" time="0.345">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.blog.BlogApplicationTests" time="0.345"/>
+  <system-out><![CDATA[10:59:23.732 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.blog.BlogApplicationTests]: BlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:59:23.801 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.BlogApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-19T10:59:24.067-07:00  INFO 36445 --- [blog] [    Test worker] com.example.blog.BlogApplicationTests    : Starting BlogApplicationTests using Java 21.0.8 with PID 36445 (started by greg in /home/greg/development/kotlin-sping-project)
+2025-10-19T10:59:24.068-07:00  INFO 36445 --- [blog] [    Test worker] com.example.blog.BlogApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-10-19T10:59:25.501-07:00  INFO 36445 --- [blog] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-19T10:59:25.515-07:00  INFO 36445 --- [blog] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2025-10-19T10:59:25.740-07:00  INFO 36445 --- [blog] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-19T10:59:25.846-07:00  INFO 36445 --- [blog] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f7f6c49a-88f7-429a-9861-a8d144ef7e27 user=SA
+2025-10-19T10:59:25.848-07:00  INFO 36445 --- [blog] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-19T10:59:25.878-07:00  INFO 36445 --- [blog] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-19T10:59:25.908-07:00  INFO 36445 --- [blog] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-19T10:59:25.931-07:00  INFO 36445 --- [blog] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-19T10:59:26.094-07:00  INFO 36445 --- [blog] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-19T10:59:26.143-07:00  INFO 36445 --- [blog] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-19T10:59:26.310-07:00  INFO 36445 --- [blog] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-19T10:59:26.312-07:00  INFO 36445 --- [blog] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-19T10:59:26.395-07:00  WARN 36445 --- [blog] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-19T10:59:26.698-07:00  INFO 36445 --- [blog] [    Test worker] com.example.blog.BlogApplicationTests    : Started BlogApplicationTests in 2.796 seconds (process running for 2.529)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/greg/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.7/fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da/byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
